@@ -1,0 +1,21 @@
+section.featured-section
+    .info
+        h2.title Featured videos
+        .line
+        p.description.
+            Aliquam sodales vitae ex tincidunt consectetur. Etiam eleifend malesuada magna, at imperdiet justo euismod eu. Aliquam vel imperdet mi, et convallis eros. Duis fermentum fringilla nisl at vulputate. Nunc nec lorem faucibus, molestie nisi id, elementum sem. Sed
+            vulputate tempor augue a efficitur urna, ultrices eu. Duis vel turpis et arcu.
+
+    .player
+        .current-video-wrapper
+            video.current-video(poster="img/player/preview.jpg")
+            img.play-button(src="img/player/play_button.svg")
+            h4.title When go to Maldives
+            p.length 03:55
+        .preview-videos
+            +videoItem('When go to Maldives', 'img/player/video1.jpg', '03:55', true)
+            +videoItem('Tanzania’s deadly pink lake', 'img/player/video2.jpg', '05:24', false)
+            +videoItem('Top things to do in Kathmandu', 'img/player/video3.jpg', '06:12', false)
+            +videoItem('Exploring China’ creative capital', 'img/player/video4.jpg', '04:33', false)
+            +videoItem('When go to Maldives', 'img/player/video1.jpg', '06:15', false)
+            +videoItem('Top things to do in Kathmandu', 'img/player/video3.jpg', '09:07', false)

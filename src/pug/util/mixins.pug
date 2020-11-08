@@ -28,3 +28,18 @@ mixin place(link, place, starsCount, length, price, hidden)
                     else
                         img.star(src="img/rating/star.jpg")
                 .length=length
+
+mixin videoItem(title, link, length, current)
+    if current
+        .video.current
+            img.preview(src=link)
+            .info
+                .title=title
+                .length=length
+    else
+        .video
+            img.preview(src=link)
+            .info
+                .title=title
+                .length=length
+

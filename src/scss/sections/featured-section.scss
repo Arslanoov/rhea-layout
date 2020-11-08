@@ -1,0 +1,175 @@
+.featured-section {
+  height: 30vh;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    .title {
+      font-size: 50px;
+      letter-spacing: 0.13px;
+
+      font-weight: 600;
+
+      color: $title-color;
+
+      margin-bottom: 10px;
+    }
+
+    .line {
+      width: 78px;
+      height: 6px;
+
+      margin: 20px 0;
+
+      background-color: $blue-color;
+    }
+
+    .description {
+      color: $grey-color;
+      width: 70%;
+
+      font-size: 22px;
+    }
+  }
+
+  .player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-height: 55vh;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    .current-video {
+      flex-basis: 55%;
+      width: 100%;
+
+      &-wrapper {
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          background: linear-gradient(to bottom, transparent 50%, #424242 100%);
+
+          z-index: 2;
+        }
+
+        position: relative;
+
+        .play-button, .title, .length {
+          position: absolute;
+          z-index: 3;
+
+          color: white;
+        }
+
+        .play-button {
+          top: 40%;
+          left: 45%;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .title {
+          left: 30px;
+          bottom: 10px;
+
+          font-size: 35px;
+          font-weight: 600;
+          letter-spacing: 0.15px;
+        }
+
+        .length {
+          color: rgba(255, 255, 255, .7);
+
+          font-size: 26px;
+
+          left: 30px;
+          bottom: 0;
+        }
+      }
+    }
+
+    .preview-videos {
+      flex-basis: 45%;
+      height: 41vh;
+
+      .video {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        img {
+          width: 35%;
+        }
+
+        .info {
+          padding-left: 10px;
+        }
+
+        .title {
+          font-size: 26px;
+          font-weight: 600;
+          letter-spacing: 0.13px;
+
+          text-align: left;
+        }
+
+        .length {
+          color: $title-color;
+
+          font-size: 20px;
+          letter-spacing: 0.22px;
+
+          align-self: flex-start;
+        }
+
+        &.current {
+          background-color: $featured-section-selected-video-background;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .player {
+      flex-direction: column;
+      height: auto;
+
+      .preview-videos {
+        margin-top: 25px;
+        text-align: center;
+
+        .video {
+          justify-content: normal;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .player {
+      .preview-videos {
+        overflow-y: scroll;
+      }
+    }
+  }
+}
