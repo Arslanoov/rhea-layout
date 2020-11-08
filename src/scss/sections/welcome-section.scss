@@ -1,0 +1,75 @@
+/* TODO: Add rem */
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 75vh;
+
+  position: relative;
+
+  padding-top: 50px;
+
+  .info {
+    width: 40%;
+
+    color: $welcome-section-title-color;
+
+    .title {
+      font-size: 75px;
+      line-height: 78px;
+      font-weight: 900;
+
+      letter-spacing: 0.68px;
+
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .description {
+      color: $welcome-section-description-color;
+
+      font-size: 22px;
+      letter-spacing: 0.22px;
+    }
+
+    .button {
+      padding: 16px 30px;
+
+      font-size: 20px;
+
+      background-color: $blue-color;
+      color: $welcome-section-button-color;
+
+      border: 0;
+      outline: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .img {
+    position: absolute;
+    right: 0;
+
+    height: 100%;
+  }
+
+  @media (max-width: 1260px) {
+    flex-direction: column;
+
+    .img {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 990px) {
+    .info {
+      width: 90%;
+    }
+  }
+}

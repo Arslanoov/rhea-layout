@@ -1,23 +1,23 @@
 section, header, footer {
   padding: 0 15px;
 
-  @media (min-width: 575.98px) {
+  @media (min-width: 576px) {
     padding: 0 calc(50vw - 270px);
   }
 
-  @media (min-width: 767.98px) {
+  @media (min-width: 768px) {
     padding: 0 calc(50vw - 360px);
   }
 
-  @media (min-width: 991.98px) {
+  @media (min-width: 992px) {
     padding: 0 calc(50vw - 480px);
   }
 
-  @media (min-width: 1199.98px) {
+  @media (min-width: 1200px) {
     padding: 0 calc(50vw - 590px);
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1450px) {
     padding: 0 calc(50vw - 690px);
   }
 }

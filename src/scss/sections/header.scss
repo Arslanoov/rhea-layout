@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
 
+  height: 7vh;
+
   padding-top: 10px;
 
   .nav {
@@ -57,10 +59,8 @@
       }
     }
   }
-}
 
-@media (max-width: 992px) {
-  .header {
+  @media (max-width: 992px) {
     .nav {
       .hamburger {
         display: flex;
