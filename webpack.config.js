@@ -55,7 +55,7 @@ module.exports = {
             // Loading CSS
             {
                 test: /\.(css)$/,
-                use: [ MiniCssExtractPlugin.loader, 'css-loader']
+                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
             },
 
             // Loading SASS/SCSS
@@ -64,6 +64,7 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
+                    'postcss-loader',
                     'sass-loader'
                 ]
             }
