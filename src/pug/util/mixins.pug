@@ -12,3 +12,19 @@ mixin hamburgerMenu(count)
     .hamburger
         - for (let i = 0; i < count; i++)
             .line
+
+mixin place(link, place, starsCount, length, price, hidden)
+    .place
+        .img-wrapper
+            img.img(src=link alt="")
+            .price=price + '$'
+            .place=place
+        unless hidden
+            .img-info
+                .rating
+                    - for (let i = 0; i < 5; i++)
+                    if i >= starsCount
+                        img.star.filled(src="img/rating/filled_star.jpg")
+                    else
+                        img.star(src="img/rating/star.jpg")
+                .length=length
