@@ -1,5 +1,3 @@
-/* TODO: Add rem */
-
 .welcome-section {
   display: flex;
   justify-content: space-between;
@@ -17,8 +15,8 @@
     color: $welcome-section-title-color;
 
     .title {
-      font-size: 75px;
-      line-height: 78px;
+      font-size: 5.3rem;
+      line-height: 5.4rem;
       font-weight: 900;
 
       letter-spacing: 0.68px;
@@ -30,14 +28,14 @@
     .description {
       color: $welcome-section-description-color;
 
-      font-size: 22px;
+      font-size: 1.57rem;
       letter-spacing: 0.22px;
     }
 
     .button {
       padding: 16px 30px;
 
-      font-size: 20px;
+      font-size: 1.42rem;
 
       background-color: $blue-color;
       color: $welcome-section-button-color;
