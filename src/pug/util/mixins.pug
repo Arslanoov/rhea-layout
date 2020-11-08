@@ -1,0 +1,14 @@
+mixin navItem(title, link)
+    li.nav-list__item
+        a.nav-list__item-link(href=link)
+            =title
+
+mixin navButtonItem(title, link)
+    li.nav-list__item
+        a.nav-list__item-link.button(href=link)
+            =title
+
+mixin hamburgerMenu(count)
+    .hamburger
+        - for (let i = 0; i < count; i++)
+            .line
