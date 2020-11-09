@@ -47,3 +47,11 @@ mixin galleryPhoto(title, link)
     .photo
         img.img(src=link)
         .title=title
+
+mixin pagination(pagesCount, activePage)
+    .pagination
+        - for (let i = 0; i < pagesCount; i++)
+            if activePage === i +1
+                .page.active
+            else
+                .page
