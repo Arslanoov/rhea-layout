@@ -41,6 +41,8 @@
     justify-content: center;
     align-items: center;
 
+    overflow-x: hidden;
+
     margin-top: 100px;
 
     .photo {
@@ -85,7 +87,7 @@
     margin-top: 50px;
 
     .arrow {
-      margin-right: 40px;
+      margin: 0 20px;
 
       &:hover {
         cursor: pointer;
@@ -105,6 +107,14 @@
         &:nth-of-type(3) {
           transform: none;
         }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .photos {
+      .photo, .img {
+        width: 250px;
       }
     }
   }
