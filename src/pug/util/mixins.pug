@@ -43,3 +43,7 @@ mixin videoItem(title, link, length, current)
                 .title=title
                 .length=length
 
+mixin galleryPhoto(title, link)
+    .photo
+        img.img(src=link)
+        .title=title
